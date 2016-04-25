@@ -1,0 +1,19 @@
+html
+  head
+    title= title
+    meta(name='description', content=description)
+    script(src='http://localhost:35729/livereload.js')
+    link(href='#{rootPath}css/index.css', rel='stylesheet')
+  body
+    header
+      h1= title
+      p= description
+      nav
+        p nav dayo
+        a(href='#{rootPath}index.html') root
+        = '\n'
+        a(href='#{rootPath}index2.html') other page
+        = '\n'
+        a(href='#{rootPath}dir/index.html') 2nd root
+    != contents
+    footer footer

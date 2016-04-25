@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <script src="http://localhost:35729/livereload.js"></script>
+</head>
+<body>
+  <h1>{{ title }}</h1>
+  <p>{{ description }}</p>
+  <header>
+    <a href="{{rootPath}}index.html">root</a>
+    <a href="{{rootPath}}index2.html">root 2</a>
+    <a href="{{rootPath}}dir/index.html">dir</a>
+  </header>
+  {{{ contents }}}
+</body>
+</html>
