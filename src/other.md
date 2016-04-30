@@ -1,8 +1,7 @@
 ---
-title: 2nd Home
+title: other page
 layout: layout.jade
 description: hogehoge
 ---
 
-2nd page
-
+Other page

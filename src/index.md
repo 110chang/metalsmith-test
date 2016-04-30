@@ -1,11 +1,13 @@
 ---
 title: Home
-layout: index.jade
+layout: layout.jade
 description: hogehoge
 ---
 
 Hello metalsmith!!
 
-dayo
+dayo daro?
 
 [2nd page](./index2.html)
+
+hoge

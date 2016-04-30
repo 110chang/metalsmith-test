@@ -5,18 +5,20 @@
 
 var Metalsmith = require('metalsmith');
 var markdown   = require('metalsmith-markdown');
+var jade       = require('metalsmith-jade');
 var rootpath   = require('metalsmith-rootpath');
 var layouts    = require('metalsmith-layouts');
 var sass       = require('metalsmith-sass');
 var serve      = require('metalsmith-serve');
 var watch      = require('metalsmith-watch');
 var beautify   = require('metalsmith-beautify');
+var ignore     = require('metalsmith-ignore');
 
 Metalsmith(__dirname)
+  .use(jade({pretty:false}))
   .use(markdown())
   .use(rootpath())
   //.use(layouts({ engine: 'handlebars' }))
-  .use(layouts({ engine: 'jade' }))
   .use(sass({ outputDir: 'css/' }))
   .destination('./dist')
   .use(serve({
@@ -26,9 +28,12 @@ Metalsmith(__dirname)
   .use(watch({
     paths: {
       "${source}/**/*": "**/*.{md,jade,sass}",
-      "layouts/**/*": "**/*.jade"
+      "layouts/**/*": true
     },
     livereload: true
+  }))
+  .use(layouts({
+    engine: 'jade'
   }))
   .use(beautify({
     indent_size: 2,

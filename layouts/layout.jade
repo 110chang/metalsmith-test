@@ -1,0 +1,29 @@
+html
+  head
+    title= title
+    meta(name='description', content=description)
+    script(src='http://localhost:35729/livereload.js')
+    // Latest compiled and minified CSS
+    link(
+      rel='stylesheet'
+      href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'
+      integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7'
+      crossorigin='anonymous'
+    )
+    link(href='#{rootPath}css/index.css', rel='stylesheet')
+  body
+    include partials/header
+    header
+      h1= title
+      p= description
+      nav
+        p nav dayo
+        a(href='#{rootPath}index.html') root
+        = '\n'
+        a(href='#{rootPath}other.html') other page
+        = '\n'
+        a(href='#{rootPath}dir/index.html') 2nd root
+        = '\n'
+        a(href='#{rootPath}dir/other.html') 2nd page
+    != contents
+    footer footer
