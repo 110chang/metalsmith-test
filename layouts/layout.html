@@ -10,15 +10,36 @@
   <link href="undefinedcss/index.css" rel="stylesheet" /> </head>
 
 <body>
-  <h1>header</h1>
-  <p>header dayone</p>
   <header>
-    <h1></h1>
-    <p></p>
-    <nav>
-      <p>nav dayo</p><a href="undefinedindex.html">root</a> <a href="undefinedother.html">other page</a> <a href="undefineddir/index.html">2nd root</a> <a href="undefineddir/other.html">2nd page</a></nav>
+    <nav style="border-radius:0" class="navbar navbar-default navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header"><a href="undefinedindex.html" class="navbar-brand">Metalsmith test</a></div>
+        <ul class="nav navbar-nav">
+          <li><a href="undefinedindex.html">Index</a></li>
+          <li><a href="undefinedother.html">Other</a></li>
+          <li><a href="undefineddir/index.html">2nd Index</a></li>
+          <li><a href="undefineddir/other.html">2nd other</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
-  <footer>footer</footer>
+  <div class="container-fluid">
+    <ul class="list-group">
+      <li class="list-group-item clearfix">
+        <div class="row">
+          <div class="col-md-2 text-muted">title</div>
+          <div class="col-md-10"></div>
+        </div>
+      </li>
+      <li class="list-group-item clearfix">
+        <div class="row">
+          <div class="col-md-2 text-muted">description</div>
+          <div class="col-md-10"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <article class="container-fluid"></article>
 </body>
 
 </html>

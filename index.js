@@ -15,7 +15,7 @@ var beautify   = require('metalsmith-beautify');
 var ignore     = require('metalsmith-ignore');
 
 Metalsmith(__dirname)
-  .use(jade({pretty:false}))
+  .use(jade({ pretty:false }))
   .use(markdown())
   .use(rootpath())
   //.use(layouts({ engine: 'handlebars' }))
@@ -27,8 +27,7 @@ Metalsmith(__dirname)
   }))
   .use(watch({
     paths: {
-      "${source}/**/*": "**/*.{md,jade,sass}",
-      "layouts/**/*": true
+      "${source}/**/*": "**/*.{md,jade,sass}"
     },
     livereload: true
   }))

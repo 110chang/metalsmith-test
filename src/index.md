@@ -1,13 +1,9 @@
 ---
 title: Home
 layout: layout.jade
-description: hogehoge
+description: This is metalsmith test
 ---
 
-Hello metalsmith!!
+## Hello metalsmith!!
 
-dayo daro?
-
-[2nd page](./index2.html)
-
-hoge
+[Other page](./other.html)

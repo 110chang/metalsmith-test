@@ -1,2 +1,15 @@
-h1 header
-p header dayone
+header
+  nav.navbar.navbar-default.navbar-inverse(style='border-radius:0')
+    .container-fluid
+      .navbar-header
+        a.navbar-brand(href='#{rootPath}index.html') Metalsmith test
+      ul.nav.navbar-nav
+        li
+          a(href='#{rootPath}index.html') Index
+        li
+          a(href='#{rootPath}other.html') Other
+        li
+          a(href='#{rootPath}dir/index.html') 2nd Index
+        li
+          a(href='#{rootPath}dir/other.html') 2nd Other
+

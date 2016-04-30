@@ -1,7 +1,7 @@
 ---
-title: other page
+title: Other page
 layout: layout.jade
-description: hogehoge
+description: This is other page in root directory
 ---
 
-Other page
+## Other page

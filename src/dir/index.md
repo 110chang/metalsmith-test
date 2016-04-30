@@ -1,8 +1,7 @@
 ---
-title: 2nd Home
+title: 2nd Index
 layout: layout.jade
-description: hogehoge
+description: This is index page in 2nd directory
 ---
 
-2nd page
-
+## 2nd Index

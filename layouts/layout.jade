@@ -13,17 +13,13 @@ html
     link(href='#{rootPath}css/index.css', rel='stylesheet')
   body
     include partials/header
-    header
-      h1= title
-      p= description
-      nav
-        p nav dayo
-        a(href='#{rootPath}index.html') root
-        = '\n'
-        a(href='#{rootPath}other.html') other page
-        = '\n'
-        a(href='#{rootPath}dir/index.html') 2nd root
-        = '\n'
-        a(href='#{rootPath}dir/other.html') 2nd page
-    != contents
-    footer footer
+    .container-fluid
+      ul.list-group
+        - props = {title:title,description:description}
+        - each key in Object.keys(props)
+          li.list-group-item.clearfix
+            .row
+              .col-md-2.text-muted #{key}
+              .col-md-10 #{props[key]}
+    article.container-fluid
+      != contents
